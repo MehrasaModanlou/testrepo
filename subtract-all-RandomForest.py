@@ -42,8 +42,6 @@ y_pred
 print('Test F1:', f1_score(test_target, y_pred, average='micro'))
 print('Test Pr:', precision_score(test_target, y_pred, average='micro'))
 print('Test Rc:', recall_score(test_target, y_pred, average='micro'))
-
-from sklearn.metrics import accuracy_score
 print('\nTest Ac:', accuracy_score(test_target, y_pred))
 
 cm = confusion_matrix(test_target, y_pred)
